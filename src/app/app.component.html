@@ -14,15 +14,15 @@
     <pre>{{ form.value | json }}</pre>
   
     <counter-value-app formControlName="counter" [counterRangeMaxValue]="endValue"
-      [counterRangeMinValue]="startValue" [currentCounterValue]="30"></counter-value-app>
+      [counterRangeMinValue]="startValue" [currentCounterValue]="currentCounterValue"></counter-value-app>
   </form>
   
   <p *ngIf="!form.valid">Input value is not defined within the range!</p>
   
   
-  <h2>Increment and Decrement Counter</h2>
+  <!-- <h2>Increment and Decrement Counter</h2>
   <counter-value-app counterMinValue="0" counterMaxValue="3"
     [currentCounterValue]="currentCounterValue"></counter-value-app>
     <hr>
     Angular 2.0 Model-driven Form
-  </div>
+  </div> -->
