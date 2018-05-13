@@ -1,0 +1,28 @@
+<div align="center">
+  <h2>Model-driven Form</h2>
+  <div>
+    <label>Start Range:</label> <input [(ngModel)]="startValue">
+  </div>
+  <div>
+    <label>End Range:</label> <input [(ngModel)]="endValue">
+  </div>
+  <form [formGroup]="form">
+    <p>Input Value for Form Control: {{form.controls.counter.value}}</p>
+    <p>Start Value: {{startValue}}</p>
+    <p>End Value: {{endValue}}</p>
+    <p>Displaying Value for Form as json:</p>
+    <pre>{{ form.value | json }}</pre>
+  
+    <counter-value-app formControlName="counter" [counterRangeMaxValue]="endValue"
+      [counterRangeMinValue]="startValue" [currentCounterValue]="30"></counter-value-app>
+  </form>
+  
+  <p *ngIf="!form.valid">Input value is not defined within the range!</p>
+  
+  
+  <h2>Increment and Decrement Counter</h2>
+  <counter-value-app counterMinValue="0" counterMaxValue="3"
+    [currentCounterValue]="currentCounterValue"></counter-value-app>
+    <hr>
+    Angular 2.0 Model-driven Form
+  </div>

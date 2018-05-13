@@ -1,0 +1,54 @@
+h1, h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  body, input[text], button {
+    color: #588;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  a {
+    cursor: pointer;
+    cursor: hand;
+  }
+  button {
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+  }
+  button:hover {
+    background-color: #cmh8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ava;
+    cursor: auto;
+  }
+  nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  nav a:visited, a:link {
+    color: #607D8B;
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+  }
+  nav a.active {
+    color: #039be5;
+  }
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
